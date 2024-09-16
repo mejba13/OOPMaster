@@ -3,7 +3,6 @@
 This project demonstrates key Object-Oriented Programming (OOP) concepts using PHP. The project includes examples and explanations of important OOP principles such as constructors, destructors, encapsulation, inheritance, and more.
 
 ## Table of Contents
-
 - [Overview](#overview)
 - [Files](#files)
   - [constructor-and-destructor.php](#constructor-and-destructorphp)
@@ -16,7 +15,6 @@ This project demonstrates key Object-Oriented Programming (OOP) concepts using P
 - [How to Run](#how-to-run)
 
 ## Overview
-
 This project covers the following key OOP concepts:
 - **Constructor & Destructor**: Managing object initialization and cleanup.
 - **Encapsulation**: Hiding the internal state of an object and exposing only necessary methods.
@@ -26,7 +24,6 @@ This project covers the following key OOP concepts:
 - **Properties and Methods**: Understanding how to use class properties and methods.
 
 ## Files
-
 ### constructor-and-destructor.php
 This file demonstrates how constructors and destructors work in PHP. The constructor method initializes object properties, and the destructor is triggered when the object is no longer in use.
 
@@ -46,7 +43,6 @@ This file covers the creation of a simple class and object, demonstrating the ba
 An introduction to using class properties and methods. Demonstrates how properties hold data and methods define behaviors for objects.
 
 ## Getting Started
-
 ### Prerequisites
 - PHP version 7.4 or above
 - A local development environment such as [Herd](https://herdphp.com) or [Laravel Valet](https://laravel.com/docs/valet)
@@ -65,7 +61,6 @@ An introduction to using class properties and methods. Demonstrates how properti
     ```
 
 ## How to Run
-
 1. Access the project from your browser by navigating to the local domain provided by Herd:
     ```
     http://OOPMaster.test
@@ -77,5 +72,4 @@ An introduction to using class properties and methods. Demonstrates how properti
     ```
 
 ## License
-
 This project is licensed under the MIT License.
