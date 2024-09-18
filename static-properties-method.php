@@ -16,3 +16,4 @@ class Person {
 }
 
 Person::PersonIdentity('John Doe','20');
+echo Person::$PersonName;
