@@ -1,16 +1,36 @@
 <?php
+// Define a namespace for utilities
+namespace App\Utilities;
 
-// Define the autoloader function
-spl_autoload_register(function ($class_name) {
-    include  'classes/' .$class_name . '.php'; // Use absolute path with __DIR__
-});
+class Formatter {
+    public static function formatText($text) {
+        return strtoupper($text);
+    }
+}
 
-// Instantiate a Product object
-$product = new RamlitProduct\Product("Laptop", 1200);
-echo $product->getProductDetails() . "<br>";
+// Define a namespace for user management
+namespace App\User;
 
-// Instantiate a Service object
-$service = new RamlitService\Service("Repair");
-echo $service->getServiceDetails();
+class User {
+    private $name;
 
-?>
+    public function __construct($name) {
+        $this->name = $name;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+}
+
+// Use the namespaces
+namespace Main;
+
+use App\Utilities\Formatter;
+use App\User\User;
+
+$user = new User("John Doe");
+echo "User Name: " . $user->getName() . "\n";
+
+$formattedName = Formatter::formatText($user->getName());
+echo "Formatted Name: " . $formattedName;
