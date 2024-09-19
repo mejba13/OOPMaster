@@ -1,4 +1,3 @@
-readme_content = """
 # OOPMaster - Object-Oriented Programming in PHP
 
 This project demonstrates key Object-Oriented Programming (OOP) concepts using PHP, showcasing the use of classes, inheritance, encapsulation, and more. It includes examples of magic methods, static methods, namespaces, and type hinting, among other OOP principles.
