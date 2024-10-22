@@ -1,25 +1,29 @@
 <?php
 
-class EMAProduct {
 
-    public $title;
-    public $number;
+class Person {
+    public $name;
+    public $age;
 
-    public function __construct($theTitle , $theNumber) {
-        $this->title = $theTitle;
-        $this->number = $theNumber;
-        echo "Constructor has been called. Title: $theTitle, Number: $theNumber<br>";
+    public function __construct($name, $age) {
+        $this->name = $name;
+        $this->age = $age;
     }
 
-    public function getTutorial(){
-        echo "Ramlit Limited provide " .$this->number. " tutorial on " . $this->title ."<br>";
+    public function getName() {
+        return $this->name;
+    }
+    public function getAge() {
+        return $this->age;
     }
 
-     //Destructor
-    public function __destruct() {
-        echo "Object of EMAProduct is being destroyed. Clean-up done.<br>";
+    public function __destruct()
+    {
+        // TODO: Implement __destruct() method.
+        echo "I am destructor";
     }
 }
 
-$EMAProduct = new EMAProduct("Aws Cloud", 10);
-$EMAProduct->getTutorial();
+$Person = new Person("John", "Doe");
+echo $Person->getName();
+echo $Person->getAge();
